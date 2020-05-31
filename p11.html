@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+<link href="https://fonts.googleapis.com/css2?family=Galada&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+ font-family: 'Galada', cursive;p
+  margin: 0;
+  background-image:linear-gradient(to top,#000000,#00221B);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+  width:95%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+  }
+  
+  .row:after {
+  content: "";
+  display: table;
+  clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+  float: left;
+  width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+  opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+  opacity: 1;
+  }
+  .skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  }
+  .html {width: 90%; background-color: #4CAF50;}
+  .css {width: 80%; background-color: #2196F3;}
+  .js {width: 65%; background-color: #f44336;}
+  .php {width: 60%; background-color: #808080;}
+  
+  </style>
+  <body>
+  <img src="https://1.bp.blogspot.com/-5oKEatcbPpk/XtI_PKdo5VI/AAAAAAAAEHU/NDPAEgF3gV4WwbOomt_cGpK132nhLSC2ACK4BGAsYHg/20200530_164205.jpg" style="margin:0;width:100%;height:auto;">
+  <div style="height:20px"></div>
+  <center><img src="https://1.bp.blogspot.com/-RTfJJa8_xo8/XtI_O9ztxfI/AAAAAAAAEHQ/4QKKSTzs52sTXa49L5UnpWbxEwNESzxuACK4BGAsYHg/20200530_170708.jpg" style="width:80%;height:auto"></center>
+  <div style="height:40px"></div>
+
+  <div style="padding:10px 10px; border:1px solid white; border-radius:5px;position: relative;width:80%;left: 50%;transform: translateX(-50%);">
+  <h2 style="text-align:center;color:white">Slideshow Gallery</h2>
+  <div class="container">
+  <div class="mySlides">
+  <div class="numbertext">1 / 6</div>
+  <img src="https://1.bp.blogspot.com/-W1D0e-AsLqs/XtI_PXy5hGI/AAAAAAAAEHY/c1d-lmA9sJkIFblhdSk7QaVGsgqavvFagCK4BGAsYHg/IMG_20200524_002345-01-01.jpeg" style="width:100%">
+  </div>
+  
+  <div class="mySlides">
+  <div class="numbertext">2 / 6</div>
+  <img src="https://1.bp.blogspot.com/-0GEQtZdsUAY/XtI_PqDwwTI/AAAAAAAAEHc/P0S57F_PFQ4PcsRmgygXtRdN8duzCPEzwCK4BGAsYHg/JPG_1589326639653-01.jpeg" style="width:100%">
+  </div>
+  
+  <div class="mySlides">
+  <div class="numbertext">3 / 6</div>
+  <img src="https://1.bp.blogspot.com/-Y8jPDb4J9nA/XtI_P3DdZUI/AAAAAAAAEHg/dqu8ExyOlHoxZE9NNuV7HqsVSFetYE1CQCK4BGAsYHg/IMG_20200318_063144-01-01.jpeg" style="width:100%">
+  </div>
+  
+  <div class="mySlides">
+  <div class="numbertext">4 / 6</div>
+  <img src="https://1.bp.blogspot.com/--APdeJ_2hv0/XtI_QRrdXmI/AAAAAAAAEHk/k4ns7cVMzaIUMUR6frGLkQTyd-6d5k9YQCK4BGAsYHg/IMG_20191231_175612-01.jpeg" style="width:100%">
+  </div>
+  
+  <div class="mySlides">
+  <div class="numbertext">5 / 6</div>
+  <img src="https://1.bp.blogspot.com/-aj8G5U4ET2c/XtI_QnmrMeI/AAAAAAAAEHo/TtcxBSXrSyoi20PP8onNHJbKMjb20hgOgCK4BGAsYHg/IMG_20190812_094658-01.jpeg" style="width:100%">
+  </div>
+  
+  <div class="mySlides">
+  <div class="numbertext">6 / 6</div>
+  <img src="https://1.bp.blogspot.com/-n00U1U9uebg/XtI_QxOHPjI/AAAAAAAAEHs/zPDi2d6ojkEulVeUJxs5fl7MsO5-_VgiQCK4BGAsYHg/IMG_20190520_045609-01.jpeg" style="width:100%">
+  </div>
+  
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+  
+  <div class="caption-container">
+  <p id="caption"></p>
+  </div>
+  
+  <div class="row">
+  <div class="column">
+  <img class="demo cursor" src="https://1.bp.blogspot.com/-W1D0e-AsLqs/XtI_PXy5hGI/AAAAAAAAEHY/c1d-lmA9sJkIFblhdSk7QaVGsgqavvFagCK4BGAsYHg/IMG_20200524_002345-01-01.jpeg" style="width:100%" onclick="currentSlide(1)" alt="1 / 6">
+  </div>
+  <div class="column">
+  <img class="demo cursor" src="https://1.bp.blogspot.com/-0GEQtZdsUAY/XtI_PqDwwTI/AAAAAAAAEHc/P0S57F_PFQ4PcsRmgygXtRdN8duzCPEzwCK4BGAsYHg/JPG_1589326639653-01.jpeg" style="width:100%" onclick="currentSlide(2)" alt="2 / 6">
+  </div>
+  <div class="column">
+  <img class="demo cursor" src="https://1.bp.blogspot.com/-Y8jPDb4J9nA/XtI_P3DdZUI/AAAAAAAAEHg/dqu8ExyOlHoxZE9NNuV7HqsVSFetYE1CQCK4BGAsYHg/IMG_20200318_063144-01-01.jpeg" style="width:100%" onclick="currentSlide(3)" alt="3 / 6">
+  </div>
+  <div class="column">
+  <img class="demo cursor" src="https://1.bp.blogspot.com/--APdeJ_2hv0/XtI_QRrdXmI/AAAAAAAAEHk/k4ns7cVMzaIUMUR6frGLkQTyd-6d5k9YQCK4BGAsYHg/IMG_20191231_175612-01.jpeg" style="width:100%" onclick="currentSlide(4)" alt="4 / 6">
+  </div>
+  <div class="column">
+  <img class="demo cursor" src="https://1.bp.blogspot.com/-aj8G5U4ET2c/XtI_QnmrMeI/AAAAAAAAEHo/TtcxBSXrSyoi20PP8onNHJbKMjb20hgOgCK4BGAsYHg/IMG_20190812_094658-01.jpeg" style="width:100%" onclick="currentSlide(5)" alt="5 / 6">
+  </div>    
+  <div class="column">
+  <img class="demo cursor" src="https://1.bp.blogspot.com/-n00U1U9uebg/XtI_QxOHPjI/AAAAAAAAEHs/zPDi2d6ojkEulVeUJxs5fl7MsO5-_VgiQCK4BGAsYHg/IMG_20190520_045609-01.jpeg" style="width:100%" onclick="currentSlide(6)" alt="6 / 6">
+  </div>
+  </div>
+  </div>
+  </div>
+  <script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+  showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+  showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+  slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+  dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+  }
+  </script>
+  <style type="text/css">
+ .ob
+ {
+ color:white;
+ }
+.obo
+{
+color:yellow
+;
+  </style>
+  <div style="height:30px"></div>
+  <div style="padding:10px 10px; border:1px solid white; border-radius:5px;position: relative;width:80%;left: 50%;transform: translateX(-50%);">
+  <center><h1 class="ob">আমার বর্তমান অবস্থা</h1></center>
+  
+  <div class="container">
+  <p class="obo">আনন্দ</p>
+  <div class="skills html">90%</div>
+  </div>
+  
+  <div class="container">
+  <p class="obo">পড়াশোনা</p>
+  <div class="skills css">80%</div>
+  </div>
+  
+  <div class="container">
+  <p class="obo">সুস্থতা</p>
+  <div class="skills js">65%</div>
+  </div>
+  
+  
+  <div class="container">
+  <p class="obo">প্রেম/ভালোবাসা</p>
+  
+  <div class="skills php">60%</div>
+  </div></div>
+  
+  <div style="height:80px"></div>
+  
+  <style type="text/css">
+
+.sp
+{
+width:80%;
+height:auto;
+border-radius:6px;
+box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.5), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+}
+  </style>
+  <center><h1 style="color:white">কিছু স্থির চিত্র</h1></center>
+  <center>
+  <img src="https://1.bp.blogspot.com/-bffTQwk9ZdI/XtJBEWDa2-I/AAAAAAAAEQU/jzS2pYFij2EXhClN77hb4EbQ0SbMPyJbQCK4BGAsYHg/IMG_20200524_002345-01.jpeg" class="sp"><br>
+  <div style="height:30px"></div>
+  
+  <img src="https://1.bp.blogspot.com/-aZ4yshV-QiE/XtJBEo_TQnI/AAAAAAAAEQc/E17__pVT9Es1H8Fk_bR2Y5yLD97bt7uggCK4BGAsYHg/IMG_20200518_204229.jpg" class="sp"><br>
+  <div style="height:30px"></div>
+  
+  <img src="https://1.bp.blogspot.com/-ivG2VDC_sdE/XtJBE3t8rVI/AAAAAAAAEQg/pJfwvmuO-a0RuQeVc_rtMd1M3YZZqa8LACK4BGAsYHg/IMG_20200505_114327.jpg" class="sp"><br>
+  <div style="height:30px"></div>
+  
+  <img src="https://1.bp.blogspot.com/-AsQNNpIhY6c/XtJBFBP433I/AAAAAAAAEQo/FaN0pJiC4AEKr2e1I-eKeyalGK3NsqE8ACK4BGAsYHg/IMG_20200421_235325.jpg" class="sp"><br>
+  <div style="height:30px"></div>
+  
+  <img src="https://1.bp.blogspot.com/-VP8XKyLDghk/XtJBFpp7nrI/AAAAAAAAEQs/cZrVJrfDlkYWrC_ZREkgm81mUSTW-piNQCK4BGAsYHg/IMG_20181021_174138-01_1590760908226.jpeg" class="sp"><br>
+  <div style="height:30px"></div>
+  
+  <img src="https://1.bp.blogspot.com/-xm5VkSxgVrw/XtJBF647xtI/AAAAAAAAEQw/wqjZ5CqwOZgZjw3CV3WeJ6lV2-u_Kac3ACK4BGAsYHg/IMG_20200222_222719-01.jpeg" class="sp"><br>
+  <div style="height:30px"></div>
+  
+  <img src="https://1.bp.blogspot.com/-nQulDKLCDkk/XtJBGGjXdDI/AAAAAAAAEQ0/JwJnS4keFGQIRZLdbxeRfaIN-B02bsuIgCK4BGAsYHg/IMG_20200222_222645.jpg" class="sp"><br>
+  <div style="height:30px"></div>
+  
+  <img src="https://1.bp.blogspot.com/-AQj7_w6VcP4/XtJBG2WyRUI/AAAAAAAAEQ8/14bsw3AgEYU-fAGvTE8Pskd6gKx_J0hSgCK4BGAsYHg/IMG_20200222_003438-01.jpeg" class="sp"><br>
+  <div style="height:30px"></div>
+  
+  <img src="https://1.bp.blogspot.com/-uJpjeoMQfbs/XtJBHCCLbOI/AAAAAAAAERA/6i5bRkjXqeoz-oKX01ELglxHqV_mXzW7gCK4BGAsYHg/IMG_20200220_201344.jpg" class="sp"><br>
+  <div style="height:30px"></div>
+  
+  <img src="https://1.bp.blogspot.com/-Qq0unkPI0Lc/XtJBHesLpMI/AAAAAAAAERE/nUCCSRj6vjglyCBZDbLtC3cprPvE88J5QCK4BGAsYHg/IMG_20200320_022450.jpg" class="sp"><br>
+  <div style="height:30px"></div>
+  
+  <img src="https://1.bp.blogspot.com/-ohgMW_Otnhg/XtJBH7JVN_I/AAAAAAAAERI/IkchF3OSYG0Kk6GZPhmC7WealPYachDSgCK4BGAsYHg/IMG_20200208_201815.jpg" class="sp"><br>
+  <div style="height:30px"></div>
+  
+  <img src="https://1.bp.blogspot.com/-gc_UaR4DaIo/XtJBIB5JAAI/AAAAAAAAERM/IvfIyWc47vE19bPRz9AhOAP3z0BDKo4hACK4BGAsYHg/IMG_20200205_105056.jpg" class="sp"><br>
+  <div style="height:30px"></div>
+  
+  <img src="https://1.bp.blogspot.com/-EnvkSQgkpVc/XtJBIUl6MGI/AAAAAAAAERQ/T5DulmucT3E6oVaqwtn3S6zG3XCofVmQwCK4BGAsYHg/IMG_20200125_124959.jpg" class="sp"><br>
+  <div style="height:30px"></div>
+  
+  <img src="https://1.bp.blogspot.com/-Bu0HE4TXT5o/XtJBIt1mMyI/AAAAAAAAERU/u9O4_7Wt1bkuBFZPKUEDCj_M5JOeMyAAgCK4BGAsYHg/IMG_20200125_124958.jpg" class="sp"><br>
+  <div style="height:30px"></div>
+  
+  <img src="https://1.bp.blogspot.com/-jFSn2Q1WgLw/XtJBI1KE_9I/AAAAAAAAERY/6t7Q19xnruogR47V5lx4uu8pTn2GyCY1wCK4BGAsYHg/IMG_20200115_232434.jpg" class="sp"><br>
+  <div style="height:30px"></div>
+  
+  <img src="https://1.bp.blogspot.com/-zh7qLV9BgCw/XtJBJfGyreI/AAAAAAAAERc/iEV26lMBkZUT-8i6q9Oaay3FAsP66zffQCK4BGAsYHg/IMG_20191231_175612.jpg" class="sp"><br>
+  <div style="height:30px"></div>
+  
+  <img src="https://1.bp.blogspot.com/-tJlxg3TOKl0/XtJBJj3X4cI/AAAAAAAAERg/3rfDIH1USDI3WpWLTbdJsrBqIJdEJSJaACK4BGAsYHg/Screenshot_2019-12-26-18-56-47-613_com.android.chrome-01.jpeg" class="sp"><br>
+  <div style="height:30px"></div>
+  
+  <img src="https://1.bp.blogspot.com/-JhBW_BG_CPo/XtJBJ_ih4YI/AAAAAAAAERk/Vflx8z8VXOAOsbrTOTy_2FvTlW3os_E3ACK4BGAsYHg/IMG_20191208_123133-01.jpeg" class="sp"><br>
+  <div style="height:30px"></div>
+  
+  <img src="https://1.bp.blogspot.com/-YBs1cw7Vc6c/XtJBKVfTUEI/AAAAAAAAERo/JZ41JPlLq2EdJ1xJH2xq-iXiWxI5WBdlwCK4BGAsYHg/PicsArt_12-04-03.18.46.jpg" class="sp"><br>
+  <div style="height:30px"></div>
+  
+  <img src="https://1.bp.blogspot.com/-HhOiZwq_IGU/XtJBKoVOAyI/AAAAAAAAERs/Rn-eUOA7emIxv4BpW-qg5xGXswhw748uQCK4BGAsYHg/IMG_20191204_151247.jpg" class="sp"><br>
+  <div style="height:30px"></div>
+  
+  <img src="https://1.bp.blogspot.com/-rcLeD53S6Ww/XtJBK2lOkTI/AAAAAAAAERw/ZhLYyXDZbdcL8-7xIm6rTOsPvGfY14sjQCK4BGAsYHg/IMG_20191120_220109.jpg" class="sp"><br>
+  <div style="height:30px"></div>
+  
+  <img src="https://1.bp.blogspot.com/-m5V57mnH1l8/XtJBLA-NxNI/AAAAAAAAER0/TD0Mb415DdYlwrk8nmmatDcf3eVIaScggCK4BGAsYHg/IMG_20191116_014243.jpg" class="sp"><br>
+  <div style="height:30px"></div>
+  
+  <img src="https://1.bp.blogspot.com/-wSnZSk7pLKE/XtJBLoHwc_I/AAAAAAAAER4/w3pWDm5xkWUk44im6EG8EX4oBtQBa-kKACK4BGAsYHg/FB_IMG_15725235184132111.jpg" class="sp"><br>
+  <div style="height:30px"></div>
+  
+  <img src="https://1.bp.blogspot.com/-y-TX61kfFFM/XtJBL_aopTI/AAAAAAAAER8/vx96YdknZBIu5rAPIgrslyN9O2Xa_hThgCK4BGAsYHg/IMG_20190915_175939.jpg" class="sp"><br>
+  <div style="height:30px"></div>
+  
+  <img src="https://1.bp.blogspot.com/-ZotgzspYYTo/XtJBMHHvCUI/AAAAAAAAESA/LILALP7IB0cC1S2r8N4DcGoLqWEqRXyogCK4BGAsYHg/IMG_20190812_094658.jpg" class="sp"><br>
+  <div style="height:30px"></div>
+  
+  <img src="https://1.bp.blogspot.com/-q_rgnYLbkqk/XtJBMpUlFDI/AAAAAAAAESE/qzVVCdhQYXUYXbX0-WpcUOOtsqgOBETkwCK4BGAsYHg/IMG_20190808_221318.jpg" class="sp"><br>
+  <div style="height:30px"></div>
+  
+  <img src="https://1.bp.blogspot.com/-lQ0nBDXkxpY/XtJBM0O0FDI/AAAAAAAAESI/jolpliRuZJoeX-45TH3AzKYa-QIa0DggACK4BGAsYHg/IMG_20190712_175508.jpg" class="sp"><br>
+  <div style="height:30px"></div>
+  
+  <img src="https://1.bp.blogspot.com/-v_Chh6lLxQE/XtJBNBv0n6I/AAAAAAAAESM/1IGp69IU30IMmy5lwNoURKSFbxa-vbvIQCK4BGAsYHg/IMG_20190727_101600.jpg" class="sp"><br>
+  <div style="height:30px"></div>
+  
+  <img src="https://1.bp.blogspot.com/-rYsuRUoTNYY/XtJBNTcdh-I/AAAAAAAAESQ/c3WJEA_uD-ELStNe4kkCqcG3-5CIebQPgCK4BGAsYHg/IMG_20190520_045609.jpg" class="sp"><br>
+  <div style="height:30px"></div>
+  
+  <img src="https://1.bp.blogspot.com/-5vBpWGx9RgI/XtJBNxAVWcI/AAAAAAAAESU/uY2q3EpmM7M4FNEe_apO7bKN6tnYPUAegCK4BGAsYHg/IMG_20190520_045527.jpg" class="sp"><br>
+  <div style="height:30px"></div>
+  
+  <img src="https://1.bp.blogspot.com/-XY_-DIg8Cqo/XtJBOFNtsXI/AAAAAAAAESY/iS2lYBsVHewUE926XZLLtP6ATj_qcGFAwCK4BGAsYHg/IMG_20190410_180225.jpg" class="sp"><br>
+  <div style="height:30px"></div>
+  
+  <img src="https://1.bp.blogspot.com/-5JhsXsu7nbo/XtJBOhVrUMI/AAAAAAAAESg/tJ15T6J6gl0w2C1jhNngH3ygkI8BtkEdQCK4BGAsYHg/received_342995466503302.jpeg" class="sp"><br>
+  <div style="height:30px"></div>
+  
+  <img src="https://1.bp.blogspot.com/-T8KEPeFYWy0/XtJBOwLx__I/AAAAAAAAESo/lPDOa4nkyfAX1log0r_0siwdkQUXhR2ZACK4BGAsYHg/received_330836101048169.jpeg" class="sp"><br>
+  <div style="height:30px"></div>
+  
+  <img src="https://1.bp.blogspot.com/-YRZv0--ecc8/XtJBPWM_54I/AAAAAAAAESs/V84a-m_QkN45kBE3wK2C1Ab6BbAb4CajQCK4BGAsYHg/received_2228752564060824.jpeg" class="sp"><br>
+  <div style="height:30px"></div>
+  
+  <img src="https://1.bp.blogspot.com/-8nYyPm0SsEc/XtJBPksoiGI/AAAAAAAAESw/ZRXGVyCb0TYiDTRWe6VMMotQ7Tk133_pgCK4BGAsYHg/IMG_20190323_174730.jpg" class="sp"><br>
+  <div style="height:30px"></div>
+  
+  <img src="https://1.bp.blogspot.com/-3sQthjK-sCw/XtJBP_fB2TI/AAAAAAAAES0/Wx66pJL4vNYDmGAraIYdJLwv8ExXUErrgCK4BGAsYHg/IMG_20190323_174727.jpg" class="sp"><br>
+  <div style="height:30px"></div>
+  
+  <img src="https://1.bp.blogspot.com/-m22Rc58XRjk/XtJBQXLcQgI/AAAAAAAAES4/BEeQOqMaEs4q8Gj_DmqtS6MLw4pm3oLRQCK4BGAsYHg/IMG_20190323_174720.jpg" class="sp"><br>
+  <div style="height:30px"></div>
+  
+  <img src="https://1.bp.blogspot.com/-WkEX0pehHZE/XtJBQiVRIAI/AAAAAAAAES8/tY-EtVRMxM4lC6Y9AJzYouYFHhr04CpYACK4BGAsYHg/IMG_20190322_112512.jpg" class="sp"><br>
+  <div style="height:30px"></div>
+  
+  <img src="https://1.bp.blogspot.com/-MRa_QZ8ghZs/XtJBQwDdkiI/AAAAAAAAETA/ppfcM2lhvqsXeCJrx1eYc00t8m1mt0AKwCK4BGAsYHg/IMG_20190308_104432.jpg" class="sp"><br>
+  <div style="height:30px"></div>
+  
+  <img src="https://1.bp.blogspot.com/-EkgYxAE1sUI/XtJBRKMWqhI/AAAAAAAAETE/jXDf9UJpikkPN1Kvn5rnMFHTKdHGmBl5gCK4BGAsYHg/IMG_20190307_193157.jpg" class="sp"><br>
+  <div style="height:30px"></div>
+  
+  <img src="https://1.bp.blogspot.com/-uHWjPz8nbOE/XtJBRVTlM5I/AAAAAAAAETI/xqWgmZGJz_gpYIbHhfNfWXFsWypcZsNnQCK4BGAsYHg/IMG_20190307_192812.jpg" class="sp"><br>
+  <div style="height:30px"></div>
+  
+  <img src="https://1.bp.blogspot.com/-Poh9BqXSAYc/XtJBRhoj-kI/AAAAAAAAETM/mv56JC3kqn4fb-5jKJ6vTEvG851grMCogCK4BGAsYHg/IMG_20190315_221606.jpg" class="sp"><br>
+  <div style="height:30px"></div>
+  
+  <img src="https://1.bp.blogspot.com/-4yiqq1yWYoM/XtJBSG3IaUI/AAAAAAAAETQ/I9wDBMIKse4ZM2H-Ol8eD_kHyTatFuC8ACK4BGAsYHg/IMG_20190307_191827.jpg" class="sp"><br>
+  <div style="height:30px"></div>
+  
+  <img src="https://1.bp.blogspot.com/-sGgTEr8eUl8/XtJBSs6qLgI/AAAAAAAAETc/AmLHP2m9WUs2mdbKcFTtjTRXu2VYIrY-ACK4BGAsYHg/IMG_20190308_103739.jpg" class="sp"><br>
+  <div style="height:30px"></div>
+  
+  <img src="https://1.bp.blogspot.com/-EX-wnS8c-F8/XtJBSyGqLSI/AAAAAAAAETk/IDhK0HShN_YVDR3TypayTgDKM3YKZWUqQCK4BGAsYHg/IMG_20190314_103114.jpg" class="sp"><br>
+  <div style="height:30px"></div>
+  
+  <img src="https://1.bp.blogspot.com/-cz9il-gPW_M/XtJBTLMpiLI/AAAAAAAAETo/FnVf5OjK5tclK36BgtVeY1fy11hC6jIrACK4BGAsYHg/IMG_20181021_123030.jpg" class="sp"><br>
+  <div style="height:30px"></div>
+  
+  <img src="https://1.bp.blogspot.com/--YIlCDAqF3A/XtJBUayikjI/AAAAAAAAET0/qdOod-ghNcABmH5l-JFjgiBusSL9ahDoACK4BGAsYHg/2018-09-02-00-30-27-122.jpg" class="sp"><br>
+  <div style="height:30px"></div>
+  
+  <img src="https://1.bp.blogspot.com/-6skv5FMvQ40/XtJBUkGS27I/AAAAAAAAET8/VzPiUFbhPdoCfIYL3Fjji91dAzmz0gOLQCK4BGAsYHg/2018-08-27-15-43-26-172.jpg" class="sp"><br>
+  <div style="height:30px"></div>
+  
+  <img src="https://1.bp.blogspot.com/-CC-Mi9f4bt0/XtJBVOJfcMI/AAAAAAAAEUE/uxxTnpQYWo0h4mFqWSsbD1pte_iv3k-gwCK4BGAsYHg/IMG_20180625_195827.jpg" class="sp"><br>
+  <div style="height:30px"></div>
+  
+  <img src="https://1.bp.blogspot.com/-p8gL7OPGpu4/XtJBVUP1mcI/AAAAAAAAEUI/AXAzYd041kYkkWW86jvACMKEubAGd-HeQCK4BGAsYHg/IMG_20180619_181048.jpg" class="sp"><br>
+  <div style="height:30px"></div>
+  
+  <img src="https://1.bp.blogspot.com/-cN3fDm6WVv4/XtJBVgIrRgI/AAAAAAAAEUM/nsNL16k8bEw3jC5o-XNV618ik-6EcJrGwCK4BGAsYHg/IMG_9320.JPG" class="sp"><br>
+  <div style="height:150px"></div>
+  <center><div class="navbar">
+  <a href="/storage/emulated/0/Anniversary/p12.html">Next Page >></a>
+ 
+  </div></center>
+  <style type="text/css">
+  /* The navigation bar */
+  .navbar {
+  overflow: hidden;
+  background-color: #1B262C;
+  padding: 7px 6px;
+  tetx-align:center;
+  position: fixed; /* Set the navbar to fixed position */
+  bottom: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+  float: center;
+  display: block;
+  font-size:21px;
+  color: #f2f2f2;
+  width:60%;
+  text-align: center;
+  border-radius:4px;
+  padding: 6px 5px;
+  border:1px solid white;
+  text-decoration: none;
+  }
+  
+  /* Change background on mouse-over */
+  .navbar a:hover {
+  background: #ddd;
+  color: black;
+  }
+  
+  </style>
+  </center>
+  </body>
+  </html>
+  

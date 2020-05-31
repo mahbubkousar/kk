@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.maateen.me/charukola-ultra-light/font.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Atma:wght@500&display=swap" rel="stylesheet">
+<style>
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+body
+{
+background-image: linear-gradient(to bottom,#240B36,#C31432);
+height:100%;
+}
+/* Set a style for all buttons */
+button {
+  background-image: linear-gradient(to right,#16222A,#3A6073);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Float cancel and delete buttons and add an equal width */
+.cancelbtn, .deletebtn {
+  float: left;
+  width: 100%;
+  color:white;
+  font-size:20px;
+}
+
+/* Add a color to the cancel button */
+.cancelbtn {
+  background-color: #ccc;
+  color: white;
+}
+
+/* Add a color to the delete button */
+.deletebtn {
+  background-color: #f44336;
+}
+
+/* Add padding and center-align text to the container */
+.container {
+  padding: 16px;
+  text-align: center;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+  background-image: linear-gradient(to bottom,black,#780206);
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  background-image: linear-gradient(to right,#AAFFA9,#12FFF7);
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Modal Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and delete button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .deletebtn {
+     width: 100%;
+  }
+}
+.topp
+{
+font-family: 'CharukolaUltraLight', sans-serif;
+
+text-align:center;
+font-size:30px;
+color:#FFFFE0;
+
+}
+.topi
+{
+font-size:20px;
+color:white;
+padding:20px 10px;
+font-family: 'Atma', cursive;
+}
+</style>
+<body>
+<div>
+<p class="topp"> অংক করে জেনে নাও</p>
+<p class="topp">তোমার সবচেয়ে পছন্দের জিনিস কোনটি?</p>
+<p style="padding:10px 10px;color:white;font-family: 'Atma', cursive;"><u>নির্দেশনাবলিঃ </u></p>
+<p class="topi">ক. ১ থেকে ৯ পর্যন্ত একটি সংখ্যা ভাবো। <br>
+খ. সংখ্যাটিকে ৩ দিয়ে গুণ করো। <br>
+গ. ৩ যোগ করো<br>
+ঘ. যতো হলো তাকে আবার তিন দিয়ে গুণ করো।<br>
+ঙ. প্রাপ্ত ফলাফলে দুইটি অংক আছে, অংক দুইটি যোগ করো।<br>
+চ. এবার যে সংখ্যাটি পেলে নিচের তালিকায় সেই নম্বরে থাকা জিনিসটিই তোমার সবচেয়ে পছন্দের। 
+</p>
+</div>
+
+
+<button style="font-size:20px;font-family: 'Atma', cursive;" onclick="document.getElementById('id01').style.display='block'">ফলাফল দেখো</button>
+<a href="/storage/emulated/0/Anniversary/p7.html" bgcolor="black"><button style="text-align:right;font-size:25px;background-image:linear-gradent(to right,#D31027,#EA384D)">Next Page >></button></a>
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1 style="font-family: 'CharukolaUltraLight', sans-serif;">যে জিনিসটি সবচেয়ে পছন্দের</h1>
+     <table width="100%" border="0" style="text-align:left;font-family: 'Atma', cursive;">
+     <tr><td>১. মোবাইল<br>
+     ২. টিভি<br>
+     ৩. কার্টুন<br>
+     ৪. ঘুম<br>
+     ৫. পড়ালেখা <br>
+     ৬. মুভি<br>
+     </td>
+     <td>৭. পপকর্ণ<br>
+     ৮. টিভি সিরিজ<br>
+     ৯. মাহবুব কাওছার<br>
+     ১০. গেমস<br>
+     ১১. খাওয়া<br>
+     ১২. ভ্রমণ<br>
+     
+     </td>
+     </tr></table>
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Go Back</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
